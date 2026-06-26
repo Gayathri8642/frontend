@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        background-color: lightblue;
+    </style> -->
+    <link rel="stylesheet" href="form.css"/>
+</head>
+<body>
+    <!-- form tag to submit data -->
+    <form id="myForm">
+        <h1>Sign Up </h1>
+        <!-- Username field -->
+        <label>Username:</label>
+        <input type="text" placeholder="Eg:John125@" required/>
+        <br/><br/>
+        <label>Email:</label>
+        <input type="email" placeholder="Eg:john125@gmail.com" required/>
+        <br/><br/>
+        <label>Phone Number:</label>
+        <input type="tel" placeholder="Eg:7896541230" required/>
+        <br/><br/>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password" required/>
+        <br/><br/>
+        <label>Confirm Password:</label>
+        <input type="password" placeholder="Confirm your password" required/>
+        <br/><br/>
+        <label>Gender:</label>
+        <span><input type="radio" name="gender" value="male"/> <span>Male</span></span>
+        <span><input type="radio" name="gender" value="female"/> <span>Female</span></span>
+        <br/><br/>
+        <label>Date of Birth:</label>
+        <input type="date" required/>
+        <br/><br/>
+        <label>How do you hear about us?</label>
+        <select>
+            <!--<option disabled selected>Select an option</option>
+                value attribute is used to send data to the backend so it is a must if we want to store the data-->
+            <option active style="color: aqua">Select an option</option>
+            <option value="social media">Social Media</option>
+            <option value="friend">Friend</option>
+            <option value="advertisement">Advertisement</option>
+            <option value="other">Other</option>
+        </select>
+        <br/><br/>
+        <label>captcha</label>
+        <textarea rows="1" cols="6" placeholder="Enter the captcha"></textarea>
+        <br/><br/>
+        <button>Sign Up</button>
+    </form>
+</body>
+</html>
